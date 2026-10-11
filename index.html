@@ -15,57 +15,24 @@
     </div>
 
     <div class="input-box">
-      <input type="text" placeholder="Add a new task... e.g. Finish DTA project">
-      <button>Add</button>
+      <input type="text" id="taskInput" placeholder="Add a new task... e.g. Finish DTA project">
+      <button id="addBtn">Add</button>
     </div>
 
     <div class="stats">
-      <span>3 Tasks</span>
-      <span>1 Completed</span>
+      <span id="totalCount">0 Tasks</span>
+      <span id="completedCount">0 Completed</span>
     </div>
 
-    <ul class="task-list">
-      <li class="task completed">
-        <label>
-          <input type="checkbox" checked>
-          <span class="checkmark"></span>
-          <span class="text">Complete age validator project</span>
-        </label>
-        <button class="delete">✕</button>
-      </li>
-
-      <li class="task">
-        <label>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          <span class="text">Upload weather app to GitHub</span>
-        </label>
-        <button class="delete">✕</button>
-      </li>
-
-      <li class="task">
-        <label>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          <span class="text">Study JavaScript for DTA exam</span>
-        </label>
-        <button class="delete">✕</button>
-      </li>
-
-      <li class="task">
-        <label>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          <span class="text">Register on dta.education.gov.ng</span>
-        </label>
-        <button class="delete">✕</button>
-      </li>
-    </ul>
+    <ul class="task-list" id="taskList"></ul>
 
     <div class="footer">
-      <button class="clear">Clear Completed</button>
+      <button class="clear" id="clearBtn">Clear Completed</button>
     </div>
+
+    <p id="empty" class="empty">No tasks yet. Add one above 👆</p>
   </div>
 
+  <script src="index.js"></script>
 </body>
 </html>
